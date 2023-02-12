@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<!-- <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script> -->
+<!-- <link rel="stylesheet" type="text/css" href="./css/mystyle.css"> -->
+<!-- <script language="javascript" type="text/javascript" src="./js/main.js"></script>  -->
+<style>
+
+
+div{
+	position:fixed;
+	right:8px; 
+	top:30px;
+	background-color:#ffebbf;
+	padding:12px;
+}
+
+pre{
+	border:1px solid black;
+	width:80%;
+	padding:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div style="">
+draft manager 1<br>
+<a href="#a">draft 1</a><br>
+<a href="#b">draft 2</a><br>
+<a href="#c">draft 3</a><br>
+<a href="#d">draft 4</a><br>
+<a href="#e">draft 5</a><br>
+<a href="#f">draft 6</a><br>
+<a href="#g">draft 7</a><br>
+<a href="#h">draft 8</a><br>
+<a href="#i">draft 9</a><br>
+<a href="#j">draft 10</a><br>
+
+
+Total number of words: <span id="countall">?</span><br>
+<a href="file:///D:/draft1.html">reload</a><br>
+</div>
+
+
+
+
+<p id="a"><pre>draft 1
+this is draft text</pre></p>
+
+<p id="b"><pre>draft 2
+this is draft text</pre></p>
+
+<p id="c"><pre>draft 3
+this is draft text</pre></p>
+
+<p id="d"><pre>draft 4
+this is draft text</pre></p>
+
+<p id="e"><pre>draft 5
+this is draft text</pre></p>
+
+<p id="f"><pre>draft 6
+this is draft text</pre></p>
+
+<p id="g"><pre>draft 7
+this is draft text</pre></p>
+
+<p id="h"><pre>draft 8
+this is draft text</pre></p>
+
+<p id="i"><pre>draft 9
+this is draft text</pre></p>
+
+<p id="j"><pre>draft 10
+this is draft text</pre></p>
+
+
+
+</body>
+
+<script type="text/javascript">
+
+//alert(document.getElementsByTagName("pre").length);
+
+var all=0;
+for(var i=0; i<document.getElementsByTagName("pre").length; i++)
+{
+	all+=document.getElementsByTagName("pre")[i].innerHTML.length;
+}
+
+document.getElementById("countall").innerHTML=all;
+
+
+</script>
+
+</html>   
