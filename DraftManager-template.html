@@ -4,24 +4,33 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title></title>
-<!-- <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script> -->
-<!-- <link rel="stylesheet" type="text/css" href="./css/mystyle.css"> -->
-<!-- <script language="javascript" type="text/javascript" src="./js/main.js"></script>  -->
+<!--start chrome --app="file:///D:/DraftManager-template.html" -->
 <style>
 
 
 div{
-	position:fixed;
+	position:absolute;
+	//fixed;
 	right:8px; 
 	top:30px;
 	background-color:#ffebbf;
 	padding:12px;
+	
+	border:1px solid black;
 }
 
 pre{
 	border:1px solid black;
 	width:80%;
 	padding:20px;
+	
+	page-break-inside: avoid;
+	
+	//https://www.cnblogs.com/qq78292959/p/4193142.html
+	//使pre可以自动换行
+	//word-wrap: break-word;
+	white-space: pre-wrap;
+	//word-wrap: break-word;
 }
 
 </style>
@@ -47,7 +56,9 @@ Total number of words: <span id="countall">?</span><br>
 <a href="file:///D:/draft1.html">reload</a><br>
 </div>
 
-
+<br><br><br>	<br><br><br>
+<br><br><br>	<br><br><br>
+<br><br><br><br>
 
 
 <p id="a"><pre>draft 1
@@ -95,6 +106,18 @@ for(var i=0; i<document.getElementsByTagName("pre").length; i++)
 }
 
 document.getElementById("countall").innerHTML=all;
+
+
+//https://www.w3cschool.cn/xqw2e7/5bom12y1.html
+//自动刷新
+function myrefresh() 
+{ 
+
+//window.location="file:///D:/draft1.html"; 	//window.location.reload(); 
+//alert("reloaded");
+} 
+setTimeout('myrefresh()',500); //每0.5秒刷新一次 
+
 
 
 </script>
