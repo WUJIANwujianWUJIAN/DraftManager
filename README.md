@@ -8,5 +8,6 @@ new feature:
 
 You can save it as pdf without break in a pre tag.
 
-!(/page1.png)
-!(/page2.png)
+!(./page1.png)
+
+!(./page2.png)
